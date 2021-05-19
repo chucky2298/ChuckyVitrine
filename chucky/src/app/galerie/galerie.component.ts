@@ -77,6 +77,7 @@ export class GalerieComponent implements OnInit {
     .subscribe(comments => this.commentes = comments,
       errmess => this.errMess = <any>errmess);
     this.comment= new Comment();
+  
   }
 
   resetArt(){
@@ -157,46 +158,6 @@ export class GalerieComponent implements OnInit {
   sortViews(){
   	this.artworks.sort((n1,n2)=> n2.views-n1.views);
   }
-
-//   onSubmit() {
-	
-// if (this.commentForm.valid) {
-// 	if(this.val1==='Ajouter'){
-// 		this.bole=true;
-//   this.commentForm.value.date=this.n;
-//     this.commentes.push(this.commentForm.value);
-//     this.commentService.addComment(this.commentForm.value)
-//       .subscribe(comment => { this.bole=false; 
-//       },
-//       errmess => { this.errMess = <any>errmess; });
-      
-//     this.commentForm.reset({
-//               author: '',
-//               content: '',
-//               date: ''
-//             });
-//   }
-//   else{
-//   	this.bole=true;
-//   	this.commentForm.value.date=this.n;
-//   	this.commentForm.value.id=this.comm.id;
-//     this.commentService.updateComment(this.commentForm.value)
-//       .subscribe(comment => { this.getComm(); 
-//       },
-//       errmess => { this.errMess = <any>errmess; });
-//       this.val1='Ajouter';
-//   	this.val2='Your comment';
-//   	this.auth= 'Author';
-//   	this.cont= 'Your comment';
-//     this.commentForm.reset({
-//               author: '',
-//               content: '',
-//               date: ''
-//             });
-
-//   }
-// }
-// }
 
 onSubmit() {
 	

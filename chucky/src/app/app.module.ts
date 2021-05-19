@@ -33,6 +33,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import {MatSliderModule} from '@angular/material/slider';
 import { FilterPipe } from './filter/filter.pipe';
 import { ApphighlightDirective } from './directives/apphighlight.directive';
+import { MasriComponent } from './masri/masri.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { ApphighlightDirective } from './directives/apphighlight.directive';
     ArtworkdetailComponent,
     ArtworkComponent,
     FilterPipe,
-    ApphighlightDirective
+    ApphighlightDirective,
+    MasriComponent
   ],
   imports: [
     BrowserModule,
